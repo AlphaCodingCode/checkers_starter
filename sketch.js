@@ -46,14 +46,8 @@ function draw() {
     }
     // Render
     drawBoard();
-
-    // highlighting square
-    // if (!player1Turn) {
-    //     moveAI();
-    //     player1Turn = true;
-    //     selectedSquare = null;
-    // }
     if (selectedSquare != null) {
+        // highlight move options for selected square
         let size = width > height ? round(height / 8) : round(width / 8);
         noFill();
         strokeWeight(3);
