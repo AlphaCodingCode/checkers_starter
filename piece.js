@@ -39,14 +39,14 @@ function cloneBoard(gBoard) {
     // update neighbours of new board
     for (let row = 0; row < 8; row++) {
         for (let col = 0; col < 8; col++) {
-            gBoard[row][col].findNeighbours();
+            newBoard[row][col].findNeighbours();
         }
     }
 
     // update possible moves for each neighbour
     for (let row = 0; row < 8; row++) {
         for (let col = 0; col < 8; col++) {
-            gBoard[row][col].possibleMoves();
+            newBoard[row][col].possibleMoves();
         }
     }
     return newBoard;
